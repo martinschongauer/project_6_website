@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Page header -->
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="stylesheet.css" />
+        <title>JustStreamIt</title>
+    </head>
+
+    <body id="page_body">
+    <div id="whole_page">
+
+        <header>
+        <img src="logo.png" alt="logo" id="logo_pic" />
+                <!-- <h1>JustStreamIt</h1> -->
+
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Genres</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="play_container" class="sections">
+            <div id="play_infos">
+                <h1 id="film_title">Film title</h1>
+                <button id="play_button"> Play </button>
+                <h3>Film synopsis: </h3>
+                <p id="film_synopsis">Film synopsis</p>
+            </div>
+
+            <img src="" alt="Film picture" id="main_img"/>
+
+        </section>
+
+        <section class="sections">
+            <div>
+                <h2 class="category_title">Best rated films</h2>
+            </div>
+
+            <div class="film_list">
+                <button class="category_buttons" id="left_button_0"> &#60 </button>
+                <img class="small_picture" src="" id="all_0" alt="Film picture" />
+                <img class="small_picture" src="" id="all_1" alt="Film picture" />
+                <img class="small_picture" src="" id="all_2" alt="Film picture" />
+                <img class="small_picture" src="" id="all_3" alt="Film picture" />
+                <button class="category_buttons" id="right_button_0"> &#62 </button>
+            </div>
+
+        </section>
+
+        <section class="sections">
+            <div>
+                <h2 class="category_title">Action</h2>
+            </div>
+
+            <div class="film_list">
+                <button class="category_buttons" id="left_button_1"> &#60 </button>
+                <img class="small_picture" src="" id="action_0" alt="Film picture" />
+                <img class="small_picture" src="" id="action_1" alt="Film picture" />
+                <img class="small_picture" src="" id="action_2" alt="Film picture" />
+                <img class="small_picture" src="" id="action_3" alt="Film picture" />
+                <button class="category_buttons" id="right_button_1"> &#62 </button>
+            </div>
+
+        </section>
+
+        <section class="sections">
+            <div>
+                <h2 class="category_title">Comedy</h2>
+            </div>
+
+            <div class="film_list">
+                <button class="category_buttons" id="left_button_2"> &#60 </button>
+                <img class="small_picture" src="" id="comedy_0" alt="Film picture" />
+                <img class="small_picture" src="" id="comedy_1" alt="Film picture" />
+                <img class="small_picture" src="" id="comedy_2" alt="Film picture" />
+                <img class="small_picture" src="" id="comedy_3" alt="Film picture" />
+                <button class="category_buttons" id="right_button_2"> &#62 </button>
+            </div>
+
+        </section>
+
+        <section class="sections">
+            <div>
+                <h2 class="category_title">Horror</h2>
+            </div>
+
+            <div class="film_list">
+                <button class="category_buttons" id="left_button_3"> &#60 </button>
+                <img class="small_picture" src="" id="horror_0" alt="Film picture" />
+                <img class="small_picture" src="" id="horror_1" alt="Film picture" />
+                <img class="small_picture" src="" id="horror_2" alt="Film picture" />
+                <img class="small_picture" src="" id="horror_3" alt="Film picture" />
+                <button class="category_buttons" id="right_button_3"> &#62 </button>
+            </div>
+
+        </section>
+
+        <footer id="page_footer" class="sections">
+            <p> &#169 2022 JustStreamIt. All rights reserved. </p>
+        </footer>
+
+    <!-- Modal window for film infos -->
+    <div id="modal_window" class="modal">
+
+    <div id="modal_content">
+        <div class="modal_text" id="modal_film_title">Fill here</div> </br>
+        <div class="modal_text" id="modal_film_date">Fill here</div> </br>
+        <div class="modal_text" id="modal_film_rating">Fill here</div> </br>
+        <div class="modal_text" id="modal_film_imdb">Fill here</div> </br>
+        <div class="modal_text" id="modal_film_description">Fill here</div> </br>
+        <div class="modal_text" id="modal_film_duration">Fill here</div> </br>
+        <div class="modal_text" id="modal_film_income">Fill here</div> </br>
+        <div class="modal_text" id="modal_film_actors">Fill here</div> </br>
+        <div class="modal_text" id="modal_film_directors">Fill here</div> </br>
+        <div class="modal_text" id="modal_film_genres">Fill here</div> </br>
+        <div class="modal_text" id="modal_film_countries">Fill here</div>
+    </div>
+
+    <div>
+        <button id="modal_close"> &times </button>
+        <img src="" alt="Film picture" id="modal_img"/>
+    </div>
+
+      <!-- Modal content
+      <div class="modal_content">
+        <span class="modal_close">&times;</span>
+        <p>Some text in the Modal..</p>
+      </div> -->
+
+    </div>
+
+    <script type="text/javascript" src="javascript.js">
+    </script>
+
+    </div>
+    </body>
+</html>

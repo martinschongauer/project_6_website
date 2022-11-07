@@ -1,0 +1,226 @@
+#page_body
+{
+    background-color: black;
+}
+
+#whole_page
+{
+    width: 60%;
+    height: 100%;
+    margin: auto;           /* Automatically centered */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header
+{
+    background-color: rgb(98,117,127);
+    height: 10%;
+    display: flex;                  /* Title and nav are put in-line */
+    flex-direction: row;            /* Not mandatory here but OK */
+    justify-content: space-between; /* Space between title and navigation links */
+}
+
+header img
+{
+    width: 15%;
+    height: auto;
+}
+
+/* Navigation */
+
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+}
+
+nav li
+{
+    margin-right: 15px;
+}
+
+nav a
+{
+    font-size: 2.0em;
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: normal;
+    text-decoration: none;  /* Do not underline */
+}
+
+nav a:hover
+{
+    color: blue;
+    cursor: pointer;
+}
+
+/* Second block: selected film */
+
+#play_container
+{
+    border: 5px white solid;
+    /*height: 300px;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#play_infos
+{
+    margin-left: 2%;
+}
+
+h1
+{
+    font-size: 2.5em;
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: normal;
+    /* margin-left: 0px;       /* Not used from now */
+}
+
+h2
+{
+    font-size: 2.0em;
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: normal;
+}
+
+h3
+{
+    font-size: 1.5em;
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#film_synopsis
+{
+    font-size: 1.3em;
+    color: grey;
+    font-style: italic;
+}
+
+#play_button
+{
+    background-color: rgb(252,70,65); /* Kind of red */
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2em;
+    border-radius: 25%;
+}
+
+#play_button:hover
+{
+    color: blue;
+    cursor: pointer;
+}
+
+/* Next blocks: film categories */
+
+.sections
+{
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+
+.film_list   /* Films and lateral buttons in rows */
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.small_picture
+{
+    border: 3px white solid;
+    width: 15%;
+}
+
+.small_picture:hover
+{
+    border: 3px blue solid;
+    cursor: pointer;
+}
+
+.category_buttons
+{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 2.0em;
+}
+
+.category_buttons:hover
+{
+    color: blue;
+    cursor: pointer;
+}
+
+/* Last block: footer */
+#page_footer
+{
+    color: white;
+    text-align: center;
+}
+
+/* Now the Modal (background) */
+.modal {
+    display: none;                  /* Hidden by default -> flex in javascript code */
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    position: fixed;                /* Stay in place */
+    top: 50%;
+	height: 65vh;                   /* Adjust vertically with negative margin trick */
+	margin-top: -35vh;
+    width: 60%;                     /* Same as the rest of the page */
+    overflow: auto;                 /* Enable scroll if needed */
+    background-color: rgb(0,0,0);   /* Could be rgba(0,0,0,0.4); */
+    border: 5px rgb(252,70,65) solid;
+}
+
+/* Modal Content/Box */
+.modal_content {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0,0,0);
+    color: white;
+}
+
+/* The Close Button */
+#modal_close {
+    background-color: rgb(252,70,65);
+    float: right;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#modal_close:hover,
+#modal_close:focus {
+    color: blue;
+    cursor: pointer;
+}
+
+#modal_content em
+{
+    font-size: 1.1em;
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+    text-decoration: underline;
+}
+
+.modal_text
+{
+    font-size: 1.3em;
+    color: grey;
+    font-family: "Times New Roman", Times, serif;
+}
